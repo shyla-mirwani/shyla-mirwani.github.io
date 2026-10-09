@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shyla Mirwani | Finance Portfolio</title>
+  <meta name="description" content="Portfolio of Shyla Mirwani, a finance student at Rutgers Business School.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #14213d;
+      --muted: #5b6577;
+      --paper: #fbfcfe;
+      --panel: #eef2f8;
+      --line: #d5dce8;
+      --accent: #cc0033;
+      --serif: "Newsreader", Georgia, "Times New Roman", serif;
+      --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 1.0625rem;
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { color: var(--ink); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+    .wrap { max-width: 880px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Navigation */
+    header.site {
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+    header.site .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0.9rem;
+      padding-bottom: 0.9rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .brand { font-family: var(--serif); font-weight: 600; font-size: 1.2rem; color: var(--ink); text-decoration: none; }
+    nav a { margin-left: 1.25rem; color: var(--muted); text-decoration: none; font-weight: 500; font-size: 0.97rem; }
+    nav a:hover { color: var(--accent); }
+
+    /* Hero: the personal statement is the headline */
+    .hero { padding: 5rem 0 4rem; }
+    .hero .name { margin: 0 0 1.25rem; color: var(--muted); font-weight: 500; }
+    .hero h1 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(2rem, 5.2vw, 3.4rem);
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+      margin: 0;
+      max-width: 22em;
+      border-left: 5px solid var(--accent);
+      padding-left: 1.25rem;
+    }
+
+    section { padding: 3.5rem 0; border-top: 1px solid var(--line); }
+    h2 { font-family: var(--serif); font-weight: 600; font-size: 1.9rem; margin: 0 0 1.5rem; }
+
+    /* Skills */
+    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1rem; margin: 0; padding: 0; list-style: none; }
+    .skills li { background: var(--panel); padding: 1.1rem 1.2rem; border-left: 3px solid var(--ink); }
+    .skills strong { display: block; font-size: 1.05rem; }
+    .skills span { color: var(--muted); font-size: 0.95rem; }
+
+    /* Projects */
+    .project { padding: 1.6rem 0; border-bottom: 1px solid var(--line); }
+    .project:first-of-type { padding-top: 0; }
+    .project:last-of-type { border-bottom: 0; padding-bottom: 0; }
+    .project h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; margin: 0 0 0.2rem; }
+    .project .meta { color: var(--muted); font-size: 0.95rem; margin: 0 0 0.8rem; }
+    .project p { margin: 0 0 0.9rem; max-width: 65ch; }
+    .project ul { margin: 0 0 1rem; padding-left: 1.2rem; max-width: 65ch; }
+    .links a { margin-right: 1.25rem; font-weight: 500; }
+
+    /* Contact */
+    .contact p { margin: 0 0 0.4rem; }
+
+    footer { border-top: 1px solid var(--line); padding: 1.5rem 0 2.5rem; color: var(--muted); font-size: 0.9rem; }
+
+    @media (max-width: 560px) {
+      nav a { margin-left: 0; margin-right: 1rem; }
+      .hero { padding: 3rem 0 2.5rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="#top">Shyla Mirwani</a>
+      <nav aria-label="Main">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 1. PERSONAL STATEMENT -->
+    <div class="wrap hero">
+      <p class="name">Shyla Mirwani, Finance, Rutgers Business School</p>
+      <h1>I'm a Rutgers finance student who turns data and teamwork into clear, practical recommendations.</h1>
+    </div>
+
+    <!-- 2. SKILLS -->
+    <section id="skills">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li><strong>Finance</strong><span>Financial analysis and business fundamentals</span></li>
+          <li><strong>Analytical skills</strong><span>Turning data into insights and decisions</span></li>
+          <li><strong>Organizational skills</strong><span>Managing timelines, tasks, and deliverables</span></li>
+          <li><strong>Communication and teamwork</strong><span>Presenting ideas and collaborating with teams</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. PROJECTS -->
+    <section id="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+
+        <article class="project">
+          <h3>Doe Valley Printing: Digital Presence Consulting</h3>
+          <p class="meta">Net Impact consulting project | Team member | Social media analysis</p>
+          <p>
+            Our team consulted for Doe Valley Printing, a screen printing and embroidery business in
+            Elizabethton, Tennessee, to improve its website visibility, social media engagement, and
+            reach with target customers such as schools, churches, and local organizations.
+            I analyzed the company's social media data to find gaps in engagement.
+          </p>
+          <ul>
+            <li>Found that the website was technically healthy but had a very low SEO visibility score, with only 19 keywords tracked.</li>
+            <li>Recommended using more effective, high-intent SEO keywords and collaborating on posts with other companies.</li>
+            <li>Recommended refining the Instagram page to rely less on AI-generated content.</li>
+          </ul>
+          <p class="links">
+            <a href="Net_Impact_Final_Presentation.pdf">View final presentation (PDF)</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Management Analysis: Rutgers Entrepreneurial Society</h3>
+          <p class="meta">Management Skills course, Rutgers Business School | Fall 2025 | Team member</p>
+          <p>
+            For a class project, our team analyzed the management challenges of the Rutgers Entrepreneurial
+            Society (RES), including declining attendance at general meetings. We interviewed the club's
+            president, a general member, and an executive board member, and I analyzed attendance trends,
+            such as roughly 150 attendees at Shark Tank compared with about 50 at general meetings.
+          </p>
+          <ul>
+            <li>Connected the attendance drop to weak communication and a reliance on extrinsic motivation, such as free food and networking.</li>
+            <li>Recommended offering incentives to bring new members to meetings and communicating more consistently on Instagram.</li>
+            <li>Recommended adding younger members to a senior-heavy executive board.</li>
+          </ul>
+          <p class="links">
+            <a href="Management_Skills_Final.pdf">View final paper (PDF)</a>
+          </p>
+        </article>
+
+        <!-- OPTIONAL THIRD PROJECT: delete the comment markers to use it
+        <article class="project">
+          <h3>Project title</h3>
+          <p class="meta">Where | When | Your role</p>
+          <p>Short description.</p>
+          <p class="links"><a href="#">View project</a></p>
+        </article>
+        -->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shylamirwani26@gmail.com">shylamirwani26@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/shyla-mirwani">linkedin.com/in/shyla-mirwani</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">&copy; 2026 Shyla Mirwani</div>
+  </footer>
+
+</body>
+</html>
